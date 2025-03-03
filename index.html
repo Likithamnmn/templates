@@ -1,0 +1,2595 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ab877dbbd2.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="app-parent">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white  fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-img.png" height="50",width="50" />
+        </a>
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link active" onclick="display('sectionchoose')" id="na" href="#sectionchoose" style="color:#808080;">Why Choose Us?<span class="sr-only">(current)</span></a>
+
+                <a class="nav-link active" onclick="display('sectionmenu')" id="na" href="#sectionmenu" style="color:#808080;">Explore Menu?</a>
+
+                <a class="nav-link active" onclick="display('sectioncart')" id="na" href="#sectioncart" style="color:#808080;">Your Orders </a>
+
+                <a class="nav-link active" onclick="display('sectiondelivery')" id="na" href="#sectiondelivery" style="color:#808080;">Delivery & Payment </a>
+
+                <a class="nav-link active" onclick="display('sectionfollow')" id="na" href="#sectionfollow" style="color:#808080;">Follow Us </a>
+
+                <a class="nav-link active" onclick="display('sectionback')" id="na" href="#sectionback" style="color:#808080;">Home </a>
+
+
+
+            </div>
+        </div>
+    </nav>
+    <div id="sectionback">
+        <div class=" d-flex flex-column justify-content-center" style="background-image: url('https://img.freepik.com/free-photo/frying-pan-empty-with-various-spices-black-table_1220-561.jpg?t=st=1726843182~exp=1726846782~hmac=563bedf6374c6c9a2f7488512621d283eeab3c6ba5383f0c26017efb9d776800&w=900'); background-size: cover; height: 95vh;">
+            <div>
+                <h1 style="text-align: center;
+                font-family: 'Roboto';
+                color: white;
+                font-size: 45px;
+                font-weight: 300px;">Get Delicious Food Anytime.</h1>
+                <p style="text-align: center;
+                color: white;
+                font-family: 'Caveat';
+                font-style: italic;
+                font-size: 25px;
+                font-weight: 100px;">Eat smart & Healty</p>
+                <div class="d-flex justify-content-center ">
+                    <button class="btn btn-warning mr-1"> <a style="color:black;" onclick="display('sectionmenu')" href="#sectionmenu">View menu</a></button>
+                    <button class="btn btn-outline-warning ml-1"> <a style="color:yellow;" onclick="display('sectionmenu')" href="#sectionmenu">Order now</a></button>
+                </div>
+            </div>
+
+        </div>
+        <div class="healthy-food-section pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="text-center">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/healthy-food-plate-img.png" class="healthy-food-section-img" />
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h1 class="healthy-food-section-heading">
+                            Fresh, Healthy, Organic, Delicious Fruits
+                        </h1>
+                        <p class="healthy-food-section-description">
+                            Say no to harmful chemicals and go fully organic with our range of
+                            fresh fruits and veggies. Pamper your body and your senses with
+                            the true and unadulterated gifts from mother nature. with the true
+                            and unadulterated gifts from mother nature.
+                        </p>
+                        <a href="https://www.youtube.com/watch?v=WoY6PiD8mXU">
+                            <button class="btn btn-warning mr-1">Watch Video</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" pt-5 pb-5" style="background-image: radial-gradient(#fff8db, #fae38c);">
+            <div class="container">
+                <div class="row">
+                    <div class=" col-12 col-md-7 d-flex flex-column justify-content-center">
+                        <h1 style="font-family: 'Roboto';
+                        font-weight: 700;
+                        font-size: 28px;
+                        color: #183b56;">
+                            Thank you for being a valuable customer to us.
+                        </h1>
+                        <p style="color: #5a7184;
+                        font-family: 'Roboto';
+                        font-size: 16px;">
+                            We have a surprise gift for you
+                        </p>
+                        <div>
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-warning mr-1" data-toggle="modal" data-target="#exampleModal">
+                                Redeem Gift
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" style="color:black;" id="exampleModalLabel">Gift Voucher!</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="https://img.freepik.com/free-vector/golden-gift-voucher-template_23-2148789014.jpg?t=st=1727719963~exp=1727723563~hmac=2967a12c35dcc1528d81e9a961168fe6e6074ebb453ae73c4e60a5558fa98174&w=740" class="w-100" />
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" col-12 col-md-5">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png" style="width: 270px;
+                        margin-bottom: 20px; " />
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="mt-4 col-12">
+                <h1 style="text-align: center;
+                color: #183b56;
+                font-family: 'Roboto';
+                font-size: 28px;
+                font-weight: 700;">Follow Us</h1>
+            </div>
+            <div class="col-12">
+                <div class="d-flex flex-row justify-content-center">
+                    <div style="background-color: #faf7e8;
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 40px;
+                    margin: 15px;
+                    padding-top: 22px;
+                    padding-bottom: 14px;
+                    padding-right: 16px;
+                    text-align:center;
+                    padding-left: 22px;">
+                        <a href="https://x.com/likitha"><i class="fab fa-twitter icon"></i></a>
+                    </div>
+                    <div style="background-color: #faf7e8;
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 40px;
+                    margin: 15px;
+                    text-align:center;
+                    padding-top: 22px;
+                    padding-bottom: 14px;
+                    padding-right: 16px;
+                    padding-left: 22px;">
+                        <a href="https://www.instagram.com/likitha__mn?igsh=MXVmeGhubWZ3Y2VtYg=="><i class="fab fa-instagram icon"></i></a>
+                    </div>
+                    <div style="background-color: #faf7e8;
+                    width: 80px;
+                    height: 80px;
+                    text-align:center;
+                    border-radius: 40px;
+                    margin: 15px;
+                    padding-top: 22px;
+                    padding-bottom: 14px;
+                    padding-right: 16px;
+                    padding-left: 22px;">
+                        <a href="https://www.linkedin.com/in/likitha-m-n-701257293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin-in icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-section pt-5 pb-5" style="background-color: #0d2436;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-logo-light.png" class="food-munch-logo" />
+                        <h1 style="color: #959ead;
+                        font-family: 'Roboto';
+                        font-weight: bold;
+                        font-size: 16px;
+                        margin-top: 20px;">orderfood@foodmunch.com</h1>
+                        <p style="color: #959ead;
+                        font-family: 'Roboto';
+                        font-size: 14px;">
+                            Sampige Road, Malleshwaram,Bangalore, Karnataka 560198.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    </div>
+
+    </div>
+    <div id="sectionmenu">
+        <div class="explore-menu-section pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="mt-3 col-12"><a href="#sectionback" onclick="display('sectionback')"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                            </svg></a></div>
+                    <div class="mt-3 col-12">
+                        <h1 class="menu-section-heading">Explore Menu</h1>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-ginger-fried-img.png" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Non-Veg Starters</h1>
+                            <a href="#sectionnonveg" class="menu-card-title" onclick="display('sectionnonveg')" style="color:#d0b200;">
+                                View All
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-veg-starters-img.png" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Veg Starters</h1>
+                            <a href="#sectionveg" class="menu-item-link" onclick="display('sectionveg')" style="color:#d0b200;">
+                                View All
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-soup-img.png" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Soups</h1>
+                            <a href="#sectionsoup" class="menu-item-link" onclick="display('sectionsoup')" style="color:#d0b200;">
+                                View All
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-grilled-seafood-img.png" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Fish & Sea food</h1>
+                            <a href="#sectionsea" class="menu-item-link" onclick="display('sectionsea')" style="color:#d0b200;">
+                                View All
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-hyderabadi-biryani-img.png" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Main Course</h1>
+                            <a href="#sectioncourse" class="menu-item-link" onclick="display('sectioncourse')" style="color:#d0b200;">
+                                View All
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-mushroom-noodles-img.png" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Noodles</h1>
+                            <a href="#sectionchin" class="menu-item-link" onclick="display('sectionchin')" style="color:#d0b200;">
+                                View All
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-gluten-img.png" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Salads</h1>
+                            <a href="#sectionsalad" class="menu-item-link" onclick="display('sectionsalad')" style="color:#d0b200;">
+                                View All
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-coffee-bourbon-img.png" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Desserts</h1>
+                            <a href="#sectiondeser" class="menu-item-link" onclick="display('sectiondeser')" style="color:#d0b200;">
+                                View All
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionchoose">
+        <div class="wcu-section pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="mt-3 col-12"><a href="#sectionback" onclick="display('sectionback')"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                            </svg></a></div>
+                    <div class="mt-4 col-12">
+                        <h1 style="color: #183b56;
+                        font-family: 'Roboto';
+                        font-size: 28px;
+                        font-weight: 700;">Why Choose Us?</h1>
+                        <p style="color: #5a7184;
+                        font-family: 'Roboto';
+                        font-size: 16px;
+                    ">
+                            We use both original recipes and classic versions of famous food
+                            items.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class=" p-3 mb-3" style="text-align: center;
+                        background-color: white;
+                        border-style: solid;
+                        border-width: 1px;
+                        border-color: #e5eaf4;
+                        border-radius: 16px;">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-serve.png" class="wcu-card-image" />
+                            <h1 class="wcu-card-title mt-3" style="color: #323f4b;
+                            font-family: 'Roboto';
+                            font-size: 22px;
+                            font-weight: 500;">Food Service</h1>
+                            <p style="color: #7b8794;
+                            font-family: 'Roboto';
+                            font-size: 16px;">
+                                Experience fine dining at the comfort of your home. All our orders are carefully packed and arranged to give you the nothing less than perfect.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="wcu-card p-3 mb-3"style="color: #323f4b;
+                        font-family: 'Roboto';
+                        font-size: 22px;
+                        font-weight: 500;">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/fruits-img.png" class="wcu-card-image" />
+                            <h1 class="wcu-card-title mt-3"style="color: #323f4b;
+                            font-family: 'Roboto';
+                            font-size: 22px;
+                            font-weight: 500;">Fresh Food</h1>
+                            <p class="wcu-card-description" style="color: #7b8794;
+                            font-family: 'Roboto';
+                            font-size: 16px;">
+                                The Fresh Food group provides fresh-cut fruits and vegetables
+                                directly picked from our partner farms and farm houses so that
+                                you always get them tree to plate.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="wcu-card p-3 mb-3" style="color: #323f4b;
+                        font-family: 'Roboto';
+                        font-size: 22px;
+                        font-weight: 500;">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/offers-img.png" class="wcu-card-image" />
+                            <h1 class="wcu-card-title mt-3" style="color: #323f4b;
+                            font-family: 'Roboto';
+                            font-size: 22px;
+                            font-weight: 500;">Best Offers</h1>
+                            <p class="wcu-card-description" style="color: #7b8794;
+                            font-family: 'Roboto';
+                            font-size: 16px;">
+                                Food Coupons & Offers upto
+                                <span class="offers">50% OFF</span>
+                                and Exclusive Promo Codes on All Online Food Orders.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="sectiondelivery">
+        <div class="delivery-and-payment-section pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="mt-3 col-12"><a href="#sectionback" onclick="display('sectionback')"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                            </svg></a></div>
+                    <div class="col-12 col-md-6 order-1 order-md-2">
+                        <div class="text-center">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/delivery-payment-section-img.png" alt="" style="width: 270px;" />
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 order-2 order-md-1">
+                        <h1 style="font-family: 'Roboto';
+                        font-weight: 700;
+                        font-size: 28px;
+                        color: #183b56;">
+                            Delivery and Payment
+                        </h1>
+                        <p style="color: #5a7184;
+                        font-family: 'Roboto';
+                        font-size: 16px;">
+                            Enjoy hassle-free payment with the plenitude of payment options
+                            available for you. Get live tracking and locate your food on a
+                            live map. It's quite a sight to see your food arrive to your door.
+                            Plus, you get a 5% discount on every order every time you pay
+                            online.
+                        </p>
+                        <button class="btn btn-warning mr-1" onclick="display('sectionmenu')">Order Now</button>
+                        <div class="mt-3">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/visa-card-img.png" style="width: 50px;
+                            height: 50px;
+                            margin-right: 28px;" />
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/master-card-img.png" style="width: 50px;
+                            height: 50px;
+                            margin-right: 28px;" /> />
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/paypal-card-img.png" style="width: 50px;
+                            height: 50px;
+                            margin-right: 28px;" />/>
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/american-express-img.png" style="width: 50px;
+                            height: 50px;
+                            margin-right: 28px;" /> />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div id="sectionfollow">
+        <div class="follow-us-section pt-5 pb-5" style="background-color: white;"">
+            <div class="container">
+                <div class="row">
+                    <div class="mt-3 col-12"><a href="#sectionback" onclick="display('sectionback')"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                            </svg></a></div>
+                    <div class="mt-4 col-12">
+                        <h1 style="text-align: center;
+                        color: #183b56;
+                        font-family: 'Roboto';
+                        font-size: 28px;
+                        font-weight: 700;">Follow Us</h1>
+                    </div>
+                    <div class="col-12">
+                        <div class="d-flex flex-row justify-content-center">
+                            <div style="background-color: #faf7e8;
+                            width: 80px;
+                            height: 80px;
+                            border-radius: 40px;
+                            margin: 15px;
+                            padding-top: 22px;
+                            padding-bottom: 14px;
+                            padding-right: 16px;
+                            padding-left: 22px;">
+                                <a href="https://x.com/likitha"><i class="fab fa-twitter icon"></i></a>
+                            </div>
+                            <div style="background-color: #faf7e8;
+                            width: 80px;
+                            height: 80px;
+                            border-radius: 40px;
+                            margin: 15px;
+                            padding-top: 22px;
+                            padding-bottom: 14px;
+                            padding-right: 16px;
+                            padding-left: 22px;">
+                                <a href="https://www.instagram.com/likitha__mn?igsh=MXVmeGhubWZ3Y2VtYg=="><i class="fab fa-instagram icon"></i></a>
+                            </div>
+                            <div style="background-color: #faf7e8;
+                            width: 80px;
+                            height: 80px;
+                            border-radius: 40px;
+                            margin: 15px;
+                            padding-top: 22px;
+                            padding-bottom: 14px;
+                            padding-right: 16px;
+                            padding-left: 22px;">
+                                <a href="https://www.linkedin.com/in/likitha-m-n-701257293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin-in icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer-section pt-5 pb-5" style="background-color: #0d2436;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-logo-light.png" class="food-munch-logo" />
+                        <h1 style="color: #959ead;
+                        font-family: 'Roboto';
+                        font-weight: bold;
+                        font-size: 16px;
+                        margin-top: 20px;">orderfood@foodmunch.com</h1>
+                        <p style="color: #959ead;
+                        font-family: 'Roboto';
+                        font-size: 14px;">
+                            Sampige Road, Malleshwaram,Bangalore, Karnataka 560198.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div id="sectioncart">
+        <div class="lang col-12"><a href="#sectionback" onclick="display('sectionback')"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                </svg></a></div>
+        <div class="mt-2 d-flex flex-row justfy-content-center">
+            <img src="https://img.freepik.com/free-vector/hand-drawn-taco-cartoon-illustration_23-2150623448.jpg?t=st=1740334469~exp=1740338069~hmac=14e471e2ed764f940d04bd5708a0cc70e64e5e7154995dfba93daeac9a06a8f8&w=1060" style="text-align: center;
+            height: 200px;
+            width: 200px;
+            margin-left: 200px;" />
+        </div>
+
+        <div class=" shadow" style="background-color: white;
+        margin-top: 100px;
+        height: 50vh;
+        padding-top: 55px;">
+            <div class=" d-flex flex-column justify-content-center">
+                <h1 class="text-center">Your Cart is <span style="color:#1E3F66">Empty!</span></h1>
+                <p class="text-center">Must add items on the cart before you proceed to check out.</p>
+                <div class="text-center">
+                    <button style="background-color: #ffe135;
+                    color: black;
+                    padding: 7px;
+                    font-size: 15px;
+                    border-style: none;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    font-weight: bold;" onclick="display('sectionmenu')">RETURN TO MENU</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionnonveg">
+        <div class="container">
+            <div class="row">
+                <div class="lang col-12"><a href="#sectionmenu" onclick="display('sectionmenu')"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                        </svg></a></div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-3  p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/side-view-chicken-kebab-with-red-onion-greens-dried-barberry-pita_141793-4838.jpg?t=st=1740391187~exp=1740394787~hmac=714a2dedcd12d688a11762eaf3c5133efcc61419687a71e73a26d4b177e37f22&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Chicken Tikka(4Pc)</br>
+                                4.3 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.350</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-3 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/high-angle-shot-delicious-hot-spicy-dish-called-drums-heaven-table_181624-50861.jpg?t=st=1740392298~exp=1740395898~hmac=3357602225832f186c55cd6fb3a06cab26071b3b43b0302c43c53553d19cc8e5&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Chicken Lollipop(4Pc)</br>
+                                4.5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.450</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/herb-fried-chicken-white-plate-wooden-floor_1150-22387.jpg?t=st=1740392703~exp=1740396303~hmac=6bf0d68d165bdb5102be603a6cf314656471da978b33c252a93bcb8dbd08f0bb&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Fish Pakora(5Pc)</br>
+                                4.5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.550</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/shrimp-cocktail-isolated-white-background_123827-27708.jpg?t=st=1740392782~exp=1740396382~hmac=efa97762349ac6300c276e5e9a77bf3c0892a85e05254f5ee9236a2a5c276f09&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Prawn Cocktail</br>
+                                3.9 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.600</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/indian-patisserie-products-with-chocolate-sauce_23-2148295022.jpg?t=st=1740392905~exp=1740396505~hmac=b196703c1f7c3ed1748c3fcd786abe4e572113ec7d49038b52dfa02bf6b08459&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Chicken Samosa (2Pc)</br>
+                                4.4 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.200</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/fried-fish-paste-stick_1339-8163.jpg?t=st=1740393000~exp=1740396600~hmac=206209e75a2767e8863c07e56c3d4e143b021ee72512d23949385de02abf02e6&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Seekh Kebab(3Pc)</br>
+                                4.2 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.460</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/boiled-eggs-stir-fried-with-tamarind-sauce_1150-22269.jpg?t=st=1740393098~exp=1740396698~hmac=aa75378e609c9de2844919996ac51c36061afdc9970f61ad2316c32c1e2f0360&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Egg 65(4 Eggs)</br>
+                                4.1 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.350</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/deep-fried-spring-rolls_1388-223.jpg?t=st=1740393202~exp=1740396802~hmac=d25087faf2744300fc12b7a7c92399f303ba9c66ac00f746a3892a3906b52d8f&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Chicken Spring Rolls(3Pc)</br>
+                                4.7 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.430</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/fried-prawn-shrimp-with-garlic_1203-8704.jpg?t=st=1740393331~exp=1740396931~hmac=9780cc9f821812c70dbfee6112772b2f4ee2e68246f4c181ad5c6803897bf604&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Chilli Prawns</br>
+                                4.4 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.590</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/kebab-vegetables-sauce_155003-373.jpg?t=st=1740393420~exp=1740397020~hmac=9067257252b7f536a5ec34ce1209151a42b84c1b09d83975f70680b839dbe7c3&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Mutton Shammi Kebab (5Pc)</br>
+                                4.9 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.660</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div id="sectionveg">
+        <div class="container">
+            <div class="row">
+                <div class="lang col-12"><a href="#sectionmenu" onclick="display('sectionmenu')"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                        </svg></a></div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-3  p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/tasty-esquites-with-spices-cups_23-2149891146.jpg?t=st=1740393781~exp=1740397381~hmac=404a2476254d4827cd36232c84730d968f572d5bc27c38399f95317f99f90df1&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Crispy Corn Chaat Cups(2cups)</br>
+                                4.6 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.250</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-3 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/top-view-yummy-cooked-mushrooms-with-greens-dark_140725-52973.jpg?t=st=1740393919~exp=1740397519~hmac=fd4758561c6ae63ef6eeb527a4ecd5cbdc9624a7ed909e74d9906d89b87a63b6&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Stuffed Mushroom Bombs</br>
+                                4.3 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.350</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/crispy-chicken-finger-snacks-sticks-with-ketcup-wooden-board_114579-1416.jpg?t=st=1740394039~exp=1740397639~hmac=d92c09cd1d109243ab7d8e5e97d10ba71603224d307870cf9fa4ccd15d28aa95&w=1480" class="w-100" />
+                        <div>
+                            <p class="fonty">Paneer Popcorn</br>
+                                4.6 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.400</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/vegan-salad-with-tofu-cucumber-sesame-served-plate-closeup_1220-7044.jpg?t=st=1740394141~exp=1740397741~hmac=1c98eb8c488af62e7771bdfbe342eae8af940002f0f2ef03ae533c75a18b97c4&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Avocado & Spinach Wontons</br>
+                                4.0 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.320</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/bottom-view-chicken-nuggets-lettuce-plate-black-pepper-wooden-bowl-wooden-spoons-dark-table_140725-112082.jpg?t=st=1740394236~exp=1740397836~hmac=a47dd656b058a0109eb2dba7ceccf61ed35ded417a7fc4b6566d1f0b2cc8253c&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Masala Sweet Potato Tikkis</br>
+                                4.7 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.480</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/azerbaijani-traditional-kuku-table_140725-885.jpg?t=st=1740394321~exp=1740397921~hmac=dc7ec1fe0ccc3d3badcfafca1e9d3f7446b0afde0b13a2fbef5ba3771fae546b&w=1480" class="w-100" />
+                        <div>
+                            <p class="fonty">Zuccini Fritters</br>
+                                3.7 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.490</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/top-view-cooked-bell-peppers-with-ground-meat-grey-surface-food-beef-dolma-vegetables-meal_140725-74595.jpg?t=st=1740394482~exp=1740398082~hmac=0e6022fedd473a7d7d2ce33f85f94aea3b738cf025156e9106497f060c101db9&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Mini Stuffed Bell Peppers(4Pc)</br>
+                                4.8 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.350</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/juicy-delicious-meat-cutlets-dark-table-russian-cuisine_2829-7278.jpg?t=st=1740394588~exp=1740398188~hmac=1f70e970c084533c8615892e147b1eecdae2e687331435d93f15ab96546d2c5a&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Crispy Tandoori Cauliflower Bites(8Pc)</br>
+                                4.9 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.530</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/delicious-jewish-dish-high-angle_23-2148814519.jpg?t=st=1740394674~exp=1740398274~hmac=3092491f853e96d7437a18e561acd309ef799aae73583743b9b6e07af2abdf86&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Hummus & Pita Shots</br>
+                                3.4 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.410</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/white-plate-with-refreshing-watermelon-feta-cheese-salad-topped-with-fresh-mint-leaves_9975-124656.jpg?t=st=1740394756~exp=1740398356~hmac=80dc29a981eb9450952068acff7bf75e8f623867f9147ce63a05a9a7fb161944&w=2000" class="w-100" />
+                        <div>
+                            <p class="fonty">Watermelon Feta Bites (6Pc)</br>
+                                4.2 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.320</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div id="sectionsoup">
+        <div class="container">
+            <div class="row">
+                <div class="lang col-12"><a href="#sectionmenu" onclick="display('sectionmenu')"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                        </svg></a></div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-3  p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/isolated-shot-white-bowl-with-hot-sour-soup-perfect-food-blog-menu-usage_181624-8524.jpg?t=st=1740394944~exp=1740398544~hmac=124876819eb9799e32f1a8bb867220088ffd758527edc99cafa3fc81e8282e3a&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Dal Shorba</br>
+                                3.7 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.250</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-3 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/creamy-tomato-soup-served-bowl_1220-3210.jpg?t=st=1740395008~exp=1740398608~hmac=0fbdd1adef3e7a3780a929620c70602aaeaf7fa45f1d50f6069e0eaa22ea3c98&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Tomato Soup</br>
+                                4.5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.250</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/green-soup-spinach-onion-spices-side-view_141793-1783.jpg?t=st=1740395078~exp=1740398678~hmac=24b9b398a35885952a26623574c072ddfa9972404bf83f6aa2783a1d4664ce9a&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Palak Soup</br>
+                                4.6 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.250</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/high-angle-delicious-food-table-arrangement_52683-92761.jpg?t=st=1740395157~exp=1740398757~hmac=4b1fcb795673337fac707a4fba5df3f82672c63c56eb34a9e19db22848260285&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Mushroom Pepper Soup</br>
+                                4.3 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.300</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/concept-tasty-food-sweet-potato-puree_185193-109284.jpg?t=st=1740395262~exp=1740398862~hmac=4be7a6bfa473cecfbeaeac503261b366db542e2e2642422c9054b8f06a265958&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Mulligatawny Soup</br>
+                                4.3 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.300</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/close-up-homemade-soup-with-chicken-spices-set_140725-114892.jpg?t=st=1740395350~exp=1740398950~hmac=bdadcf6e345c52e4237bec65d9b8e0e23633e87c99edede0f80fc13e8f381e16&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Chicken Shorba</br>
+                                4.8 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.450</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/top-view-homemade-bozbash-soup-wooden-spoon-kitchen-towel-bunch-dill-tomatoes-onions-nude-background_140725-111238.jpg?t=st=1740395424~exp=1740399024~hmac=d8465c706f668d1e2da3a23a697c3643eaea90b68251c15f6e5b44af0eab962e&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Mutton Paya Soup</br>
+                                5.0 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.450</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/chicken-broth-soup-with-herbs-pomegranate-seeds_114579-1145.jpg?t=st=1740395524~exp=1740399124~hmac=6bf200ac672a924494d1f28acf5bd6e4ce15c0991618a5457a4c27c099994fce&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Coorgi Pandi Soup</br>
+                                4.1 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.500</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/high-angle-soups-bowls-with-shrimp-lemon_23-2148377448.jpg?t=st=1740395603~exp=1740399203~hmac=5bfbf45593b76d98dbc9cfcd4ca4f3c5c26763ca51dff258ef813b749f545c2a&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Crab Soup</br>
+                                4.9 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.500</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/tomato-soup-with-fish-table_140725-7470.jpg?t=st=1740395700~exp=1740399300~hmac=cbed196ff9a6672da518babae03ef890618c84fb06b5e4ff4f8e7c328cb45b63&w=1380" class="w-100" />
+                        <div>
+                            <p class="fonty">Kali Mirch Chicken Soup</br>
+                                4.8 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.480</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div id="sectionsea">
+        <div class="container">
+            <div class="row">
+                <div class="lang col-12"><a href="#sectionmenu" onclick="display('sectionmenu')"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                        </svg></a></div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-3  p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/fried-prawn-shrimp-with-garlic_1203-8704.jpg?t=st=1740395829~exp=1740399429~hmac=bcc86f166d6281ee3557f46d210f56401f72af0dfe8227100bfecd3eddb8bf9c&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Goan Prawn Balchao</br>
+                                4.0 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.550</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-3 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/curry-with-chicken-onions-indian-food-asian-cuisine_2829-4415.jpg?t=st=1740395759~exp=1740399359~hmac=ef064c79be9c335c5228a9765c78b7b912c5a35c1d8259ba2d096faab3f35852&w=1480" class="w-100" />
+                        <div>
+                            <p class="fonty">Malvani Fish Curry</br>
+                                4.1 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.460</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/soft-shell-crab-with-chilli-salt_1339-4337.jpg?t=st=1740395986~exp=1740399586~hmac=da649676a967813e7bdaa072507f644541875038f1775b3df01a83367d2218e7&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Chettinad Crab Masala</br>
+                                4.2 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.490</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/close-up-delicious-asian-food_23-2150535861.jpg?t=st=1740396025~exp=1740399625~hmac=63884306c24f205205494851c3e73220d3206432c4a3431957583f8f1be39f24&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Mangalorean Prawn Gassi</br>
+                                4.4 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.590</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/top-view-delicious-fish-meal_23-2148734691.jpg?t=st=1740396443~exp=1740400043~hmac=16fcee060237d393d51e302adc14a927f15629334b5dd01b3ce38efdedacd414&w=1380" class="w-100" />
+                        <div>
+                            <p class="fonty">Bengali Shorshe Ilish</br>
+                                4.5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.600</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/chicken-blood-curry-bowl-with-chili-spring-onions-cucumber-red-onion_1150-27058.jpg?t=st=1740396537~exp=1740400137~hmac=3321d2b5d2416e73f3aef63116c6b061ba0aaafab4b0f33bcf7730d5acd846d7&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Kerala Meen Moilee</br>
+                                4.6 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.550</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/front-view-pastry-with-meat-delicious-dough-meal-inside-brown-plate-with-lemon-dark-desk_140725-40871.jpg?t=st=1740396617~exp=1740400217~hmac=ac348fc02bf84f1b108a49c5491db61c6fbb0afe577541f5767aad69fad0fcf8&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Tandoori Pomfret</br>
+                                4.7 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.450</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/high-angle-pakistan-food-arrangement_23-2148821549.jpg?t=st=1740396693~exp=1740400293~hmac=73eb99fb1b18660e8e0f2a57318e21552b6df6725e5730cbf3b4fb94bbf95350&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Andhra Royyala Iguru</br>
+                                4.8 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.500</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/overhead-view-fried-fishes-lemon-slices-brown-plate-spices-tomatoes-oil-bottle-mix-colors-table-with-free-space_179666-18185.jpg?t=st=1740396768~exp=1740400368~hmac=fbe6e20f8d80ffddb2301d94759943a43254a240ea3a4466c747d881df6d499f&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Bombil Fry</br>
+                                4.9 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.590</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/side-view-fried-eggs-with-shrimps-vegetables-pan-served-with-sauces_140725-11952.jpg?t=st=1740396852~exp=1740400452~hmac=bb8a658d601919a98ad76b7e95953ebfa8c75b6277b5417c1ef02cb017f2bbf8&w=1060" class="w-100" />
+                        <div>
+                            <p class="fonty">Chingri Malai Curry</br>
+                                5.0 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.610</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div id="sectioncourse">
+        <div class="container">
+            <div class="row">
+                <div class="lang col-12"><a href="#sectionmenu" onclick="display('sectionmenu')"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                        </svg></a></div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-3  p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/indian-butter-chicken-black-bowl-wooden-table_123827-20592.jpg?t=st=1740397024~exp=1740400624~hmac=f7ffd42879fa323b89e4d8df9eec317f2b1800d93015db2997ebd672243d1f23&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Butter Chicken</br>
+                                4.8 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.500</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-3 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/bowl-homemade-stew-close-up_23-2148494753.jpg?t=st=1740397076~exp=1740400676~hmac=b239a18154fe69ab38883ce61438a409355a614e07a20e4d9f3a601e70e92a5e&w=2000" class="w-100" />
+                        <div>
+                            <p class="fonty">Rogan Josh</br>
+                                4.6 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.550</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/chicken-with-mustard-red-peppers_661915-105.jpg?t=st=1740397155~exp=1740400755~hmac=0090616035b2a797f62fc1d7fbedce8bd8d4675cdf61cf19b8c4c3240bee2c67&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Chettinad Chicken Curry</br>
+                                4.8 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.530</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/gourmet-chicken-biryani-with-steamed-basmati-rice-generated-by-ai_188544-13480.jpg?t=st=1740397256~exp=1740400856~hmac=81b5a8ae4275992ef568a5657a434638ae426c5d3f309e6c9f74b12e6bce248a&w=2000" class="w-100" />
+                        <div>
+                            <p class="fonty">Mutton Biryani</br>
+                                5.0 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.600</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/top-chiken-stew-with-garlic-tomato-sauce-served-with-spices-wooden-board_140725-12330.jpg?t=st=1740397324~exp=1740400924~hmac=b429ff7065cc949c2f27f1b0e43c49a350c1046bec3825357c6be7b7d46f53df&w=1060" class="w-100" />
+                        <div>
+                            <p class="fonty">Chicken Kolhapuri</br>
+                                4.5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.540</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/fried-chicken-special-sauce_140725-4653.jpg?t=st=1740397765~exp=1740401365~hmac=696ca74df826805046a0ccd96713390d5777412a8493ab780817925c6d16e575&w=900" class="w-100" />
+                        <div>
+                            <p class="fonty">Kerala Fish Curry</br>
+                                4.3 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.490</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/green-curry-with-eggs-black-cups-with-lemon-lemongrass-chili-tomatoes_1150-25741.jpg?t=st=1740397902~exp=1740401502~hmac=823c2a3d671f94c5311a2951b40a9367c740782d7124ed1da5a0e4b9451f3152&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Egg Curry</br>
+                                4.7 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.280</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/top-view-tasty-meat-soup-with-potatoes_140725-135141.jpg?t=st=1740397966~exp=1740401566~hmac=24cea57057afc711fe40c549d47738bf58d3c311b7ed9c4a2028d5687ee81e0a&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Paya Curry</br>
+                                4.8 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.590</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/high-angle-pakistan-meal-composition_23-2148821517.jpg?t=st=1740398039~exp=1740401639~hmac=b7375430d9c70b31e4a6e32dcba4fd8ccd7b7564f41f7339cf33f322445b4f58&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Hyderabadi Chicken Dum Biryani</br>
+                                4.9 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.590</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/delicious-goulash-stew-table_23-2149371730.jpg?t=st=1740398111~exp=1740401711~hmac=e734b55bb9effb75adcf03e4d23b4840772beb04cd28562c186d9f5438738f5f&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Goan Pork Vindaloo</br>
+                                4.5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.580</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div id="sectionchin">
+        <div class="container">
+            <div class="row">
+                <div class="lang col-12"><a href="#sectionmenu" onclick="display('sectionmenu')"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                        </svg></a></div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-3  p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/udon-noodles-with-chicken-peppers-japanese-cuisine_2829-11266.jpg?t=st=1740398275~exp=1740401875~hmac=ac782b3e544e5045d949e53ed85c14ae34883fc7ecb35f58aa196d4825ca9ccb&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Hakka Noodles</br>
+                                4.8 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.400</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-3 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/fried-rice-served-with-hot-syrup_157027-4061.jpg?t=st=1740398351~exp=1740401951~hmac=b5db5103ec24d8f5f0e7a36859163f6107a107b7fae1778d6fbdcefc7dbca028&w=2000" class="w-100" />
+                        <div>
+                            <p class="fonty">Schezwan Fried Rice</br>
+                                4.6 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.340</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/baked-mushrooms-with-soy-sauce-herbs-vegan-food_2829-4429.jpg?t=st=1740398452~exp=1740402052~hmac=d16fae0e5dab12768b76f44240feb2d09f82748dbaabacb6ed47ae5bb17dedfe&w=1480" class="w-100" />
+                        <div>
+                            <p class="fonty">Mushroom Manchurian</br>
+                                4.4 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.290</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/fried-chicken-vegetables-sauce-with-sesame_141793-92.jpg?t=st=1740398528~exp=1740402128~hmac=a45b875761c8bd1b906c3f2e3ca4964a0743b424d5493d5defc86a12d33b46fe&w=740" class="w-100" />
+                        <div>
+                            <p class="fonty">Chilli Paneer</br>
+                                4.2 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.300</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/meatballs-sweet-sour-tomato-sauce_2829-19545.jpg?t=st=1740398582~exp=1740402182~hmac=1eb53d6992c8c97866ef79685e2ccc174d97359a5830bbe06fedcabd89aff612&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Chicken Manchurian</br>
+                                4.5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.350</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/plate-food-with-side-sauce_188544-8402.jpg?t=st=1740398663~exp=1740402263~hmac=ad167df3626fb4b0a8c7eac3005d9427106966878e12e35640a5affc9ee2a828&w=2000" class="w-100" />
+                        <div>
+                            <p class="fonty">Veg Spring Rolls</br>
+                                4.3 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.300</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/baked-potatoes-with-garlic-herbs-fried-chanterelles-cast-iron-skillet_2829-17397.jpg?t=st=1740398740~exp=1740402340~hmac=88493ebb284b1f7cab64a9a43fb0ae86a20a04dff241a5cb4cfed36166afbf2e&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Honey Chilli Potatoes</br>
+                                4.7 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.280</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/flat-lay-noodles-with-vegetables-chicken_23-2148377422.jpg?t=st=1740398825~exp=1740402425~hmac=97374a53a2365a7f92bf06d778f0953c74cfe940079097a3255e99300c545e6f&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Chowmein</br>
+                                4.3 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.300</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/tasty-asian-noodles-with-cheese-tofu-vegetables-bowls_1220-5312.jpg?t=st=1740398885~exp=1740402485~hmac=55a990cb2c38a1b99c484572b9e82504bd5943eb592ef0cc4ad868debf23a02a&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Dan Dan Noodles</br>
+                                4.4 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.295</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/udon-noodles-with-chicken-peppers-japanese-cuisine_2829-11294.jpg?t=st=1740398947~exp=1740402547~hmac=709f940c4c3e4d2ed6b4e646752ad54072bab7bcc7393e9be3ff699323271757&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Chilli Oil Noodles</br>
+                                4.5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.180</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div id="sectionsalad">
+        <div class="container">
+            <div class="row">
+                <div class="lang col-12"><a href="#sectionmenu" onclick="display('sectionmenu')"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                        </svg></a></div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-3  p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/chicken-parmesan-caesar-salad-with-lettuce-cherry-tomatoes-inside-white-bowl-served-with-sauce-bread_114579-204.jpg?t=st=1740399557~exp=1740403157~hmac=fca33ba3341c242283d3480ee119efb574de00cd8ef2a5579ca831e00d6bd67b&w=900" class="w-100" />
+                        <div>
+                            <p class="fonty">Caesar Salad</br>
+                                4.8 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.100</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-3 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/greek-salad-with-cucumber-tomato-sweet-pepper-lettuce-green-onion-feta-cheese-olives-with-olive-oil-healthy-food_2829-19692.jpg?t=st=1740399611~exp=1740403211~hmac=4dc00138de46869d802f5ae034080271d5826c1efd37d512da4c332a323303fb&w=1480" class="w-100" />
+                        <div>
+                            <p class="fonty">Greek Salad</br>
+                                4.6 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.100</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/fresh-italian-salad-antipasto-called-caprese-with-buffalo-mozzarella-sliced-tomatoes-basil-with-olive-oil-ingredients-vegetarian-caprese-salad-italian-food-top-view-rustic-style_1150-44797.jpg?t=st=1740399662~exp=1740403262~hmac=a58dd083ae487df92b49a7dd978d0c1085f264a68698a91b2e415d716918f3f6&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Caprese Salad</br>
+                                4.4 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.100</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/fresh-vegetable-salad-table_140725-340.jpg?t=st=1740399723~exp=1740403323~hmac=cd179dd7508bb8f40fa95091a299da21810ee5e2d595fb77beb5e38bca48d32c&w=1480" class="w-100" />
+                        <div>
+                            <p class="fonty">Waldorf Salad</br>
+                                4.2 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.100</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/front-view-egg-salad-consists-olives-green-salad-dark-blue-background_179666-17426.jpg?t=st=1740399821~exp=1740403421~hmac=51de7b6a26e68454749ea7dd8b4ab640175d7034c3625868f4fbde1f951d6697&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Nicoise Salad</br>
+                                4.5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.100</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/quinoa-with-vegetables-cooked-lunch-dinner-served-bowl-closeup_1220-5345.jpg?t=st=1740399887~exp=1740403487~hmac=a84d0204133ab5e76dd9bc4824950f9eceb6f08b3243f75202dc2b5678158a6d&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Quinoa Salad</br>
+                                4.3 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.100</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/delicious-chickpea-salad-with-avocado-feta-cheese-top-view_114579-10692.jpg?t=st=1740399964~exp=1740403564~hmac=90fd2a3082ba077a02d8136e73e1dee61a558bdc66b631eb75239016139f8838&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Avocado & Chickpea Salad</br>
+                                4.7 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.100</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/side-view-light-cabbage-salad-with-corn-juice_140725-13954.jpg?t=st=1740400022~exp=1740403622~hmac=1438b65c13300bec546fc3f5dc1de435717cc9f4913970968e7bb01b322b349a&w=1060" class="w-100" />
+                        <div>
+                            <p class="fonty">Asian Seasame Slaw</br>
+                                4.3 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.100</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/chicken-caesar-salad-black-background_123827-29280.jpg?t=st=1740400076~exp=1740403676~hmac=3546fd119963d672c16a5975a97b74a57468acc03ee7bd3b160407fd0925b88b&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Grilled Chicken Salad</br>
+                                4.4 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.100</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/delicious-healthy-oatmeal-with-grapefruit-pomegranate-almond-chia-seeds-healthy-breakfast-fitness-food-proper-nutrition_2829-6101.jpg?t=st=1740400154~exp=1740403754~hmac=286265b35ef7e1c17b7c74f6008ab1eae910e3901011d4444f5245045076533d&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Watermelon & Feta Salad</br>
+                                4.5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.100</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div id="sectiondeser">
+        <div class="container">
+            <div class="row">
+                <div class="lang col-12"><a href="#sectionmenu" onclick="display('sectionmenu')"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                        </svg></a></div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-3  p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/high-angle-delicious-indian-dessert_23-2149312428.jpg?t=st=1740400518~exp=1740404118~hmac=0d24f0ace250369abb9ea76b38b25fc815b7383e42fde2211763990a4bb3a223&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Gulab Jamun</br>
+                                4.8 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.200</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-3 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/fresh-gourmet-fruit-bowl-wooden-leaf-plate-generative-ai_188544-8336.jpg?t=st=1740400554~exp=1740404154~hmac=c7776dbebcf00daa61acf6186c7a2ec3b48f92c65bcf262de9ccd344d63d14e3&w=2000" class="w-100" />
+                        <div>
+                            <p class="fonty">Rasgulla</br>
+                                4.6 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.200</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/semiya-payasam-shewai-sewai-khir-seviyan-kheer-is-indian-sweet-made-with-vermicelli-milk-ghee-sugar-jaggery-raisins-nuts_466689-75455.jpg?t=st=1740400584~exp=1740404184~hmac=190d4156c6c56f01f95352aa096078d4b4f291021f111d7d8865cc7e1f56507b&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Kheer</br>
+                                4.4 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.150</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/traditional-azerbaijan-indian-turkish-sweet-dessert-halvah-with-nuts-top_114579-1310.jpg?t=st=1740400618~exp=1740404218~hmac=e005ee56d38147aa5966a97fa4ee5e6886983dd72194dad5d22a6e5a500c19b8&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Gajar Ka Halwa</br>
+                                4.2 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.150</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/greek-yogurt-wooden-bowl-isolated-white-background_123827-22632.jpg?t=st=1740400627~exp=1740404227~hmac=2631f183f1d35c43ba4588d2621905be0b7dda171a90c201cb2fbf8e9f7d1791&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Shrikhand</br>
+                                4.5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.250</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/wooden-surface-with-strawberry-jam_23-2147609713.jpg?t=st=1740400728~exp=1740404328~hmac=e40cc8720882226c3f7be1097df21b6ab2d1562e5a9f9fabd8333b9ff66bc6ef&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Jello</br>
+                                4.3 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.100</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/blackberries-glass-cup-with-ice-cream-white-textured-side-view_176474-7248.jpg?t=st=1740400775~exp=1740404375~hmac=c47f46ff01cbf8503e57d52dc17bd293eb76db9fecfed3bf83faa4cecf35d321&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Vanilla Bean</br>
+                                4.7 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.300</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/chocolate-waffle-clay-plate-marble_114579-70911.jpg?t=st=1740400818~exp=1740404418~hmac=ae7a2df03d3b4c0a7c6d009b06eadd3a794c97e1b640c9ea178e7f02e356e0cb&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Chocolate Fudge</br>
+                                4.3 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.300</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/strawberry-smoothie-with-tiny-waffle-chocolate-slices-strawberries-white-plate-dark-blue-surface_114579-33850.jpg?t=st=1740400850~exp=1740404450~hmac=bc6cbfcb742d7ce86161a399040a4b95341369493250aef7299fb17e0f9e7f26&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Strawberry Delight</br>
+                                4.4 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.300</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-l-4">
+                    <div class="mt-2 p-1 shadow">
+                        <img src="https://img.freepik.com/free-photo/summer-dessert-ice-cream-ice-cream-with-coconut_185193-110454.jpg?t=st=1740400887~exp=1740404487~hmac=66f29af4098ea6ffd0d594c1cd882b49d0b4b7896d86f3e740c80c6306178735&w=1800" class="w-100" />
+                        <div>
+                            <p class="fonty">Tender Coconut</br>
+                                4.5 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="#FF202c" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </p>
+                            <p>Rs.350</p>
+                            <button style="background-color: #ffe135;
+                            color: black;
+                            padding: 7px;
+                            font-size: 15px;
+                            border-style: none;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            font-weight: bold;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+
+</body>
+
+
+</html>
